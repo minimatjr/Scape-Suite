@@ -1,0 +1,52 @@
+/* ===== GLOBAL RESET ===== */
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* 🔹 Navbar offset system */
+:root {
+  --nav-height: 60px; /* fallback value before JS measures */
+}
+
+/* Push entire app below fixed navbar */
+body {
+  padding-top: var(--nav-h);
+}
+
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== BASE TYPOGRAPHY ===== */
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Remove Vite demo centering styles */
+/* No flex centering on body */
+/* No max-width on root */
